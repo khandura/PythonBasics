@@ -91,10 +91,42 @@ def traverse_list():
         print(num)
 
 
+def misc_list_operations():
+    names = ['Ak', 'Pk', 'Ps', 'Ac', 'Pk']
+    print(f'names list : {names}')
+
+    # find the index of an object
+    print('index of Pk : ', names.index("Pk"))
+    # print('index of unknown object : ', names.index("UK"))    #unkown value will throw ValueError
+
+    # find the number of occurrences of an object
+    print('occurrences of Pk : ', names.count('Pk'))
+
+    # check if list contains an object
+    print('names contains Pk ', 'Pk' in names)
+    print('names contains Pk ', 'Pk' not in names)
+
+
+def sorting_and_reversing_list():
+    names = ['Ak', 'Pk', 'P', 'Ack', 'Pk']
+    print(f'names list : {id(names)} , {names}')
+
+    # sorting list
+    print(f'sorted list {id(names.sort(key=len))} {names}')
+    print(f'sorted list {id(names.sort(key=len))} {names}')
+
+    names = ['Ak', 'Pk', 'P', 'Ack', 'Pk']
+    print(f'names list : {id(names)} , {names}')
+    sorted(names)
+    print(names)
+
+
 # access_element_from_list()
 # list_min_max_elements()
 # add_element_to_list()
 # remove_element_from_list()
 # combine_lists()
 # index_type_error()
-traverse_list()
+# traverse_list()
+# misc_list_operations()
+sorting_and_reversing_list()
